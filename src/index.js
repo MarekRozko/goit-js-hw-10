@@ -34,5 +34,7 @@ function onSearchInput() {
     })
     .catch(error => {
       Notify.failure('Oops, there is no country with that name');
+      countryList.innerHTML = '';
+      countryInfo.innerHTML = '';
     });
 }
